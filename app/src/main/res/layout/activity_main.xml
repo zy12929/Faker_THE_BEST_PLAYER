@@ -3,19 +3,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="app.com.example.android.faker_the_best_player.MainActivity">
 
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Hello World app!"
-    android:id="@+id/textView" />
+        android:layout_height="wrap_content"
+        android:src="@drawable/androidfaker"
+        android:id="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="centerCrop" />
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="540dp"
+        android:src="@drawable/androidzed"
+        android:id="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="191dp"
+            android:text="&quot;Nobody can defeat me in my area!&quot;"
+            android:textColor="#FFFF00"
+            android:textSize="30sp"
+            android:id="@+id/textview"
+            android:layout_weight="0.88" />
+
+    </LinearLayout>
+
 </RelativeLayout>
