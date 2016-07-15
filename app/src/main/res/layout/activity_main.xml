@@ -42,6 +42,7 @@
             android:textColor="#FFFF00"
             android:textSize="30sp"
             android:id="@+id/textview"
+            android:padding="10dp"
             android:layout_weight="0.88" />
 
     </LinearLayout>
